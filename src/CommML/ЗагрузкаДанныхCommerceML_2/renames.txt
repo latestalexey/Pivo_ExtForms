@@ -1,0 +1,16 @@
+﻿167e660e-8fa8-466c-8995-691ba5140a28-->und\167e660e-8fa8-466c-8995-691ba5140a28
+167e660e-8fa8-466c-8995-691ba5140a28.0-->Form\Настройки
+59892c07-c743-47ee-8617-cb0609fc8285.0\info-->und\59892c07-c743-47ee-8617-cb0609fc8285.0\info
+59892c07-c743-47ee-8617-cb0609fc8285.0\text-->ObjectModule.bsl
+59892c07-c743-47ee-8617-cb0609fc8285.1-->und\59892c07-c743-47ee-8617-cb0609fc8285.1
+61c51bdb-adf2-473b-8865-25eff3ae21a8-->und\61c51bdb-adf2-473b-8865-25eff3ae21a8
+61c51bdb-adf2-473b-8865-25eff3ae21a8.0-->Form\ФормаЗаписанныхДокументов
+779c720b-178e-43c2-a7dd-32496d1f77f9-->und\779c720b-178e-43c2-a7dd-32496d1f77f9
+8f954ba7-7233-4d3a-8d7e-6cc5ecf61894-->und\8f954ba7-7233-4d3a-8d7e-6cc5ecf61894
+8f954ba7-7233-4d3a-8d7e-6cc5ecf61894.0-->Form\Форма
+copyinfo-->und\copyinfo
+e0b857ec-4fb0-4ca1-9ff9-da54663ea47e-->und\e0b857ec-4fb0-4ca1-9ff9-da54663ea47e
+e0b857ec-4fb0-4ca1-9ff9-da54663ea47e.0-->Form\ФормаСоответствия
+root-->und\root
+version-->und\version
+versions-->und\versions

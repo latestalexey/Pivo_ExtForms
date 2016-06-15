@@ -1,0 +1,7 @@
+﻿1de415e9-e6eb-42e7-ad6d-6b582aa7b56d-->und\1de415e9-e6eb-42e7-ad6d-6b582aa7b56d
+1de415e9-e6eb-42e7-ad6d-6b582aa7b56d.0-->Form\Форма
+8a284a4f-6335-43f1-8f24-38145978b09c-->und\8a284a4f-6335-43f1-8f24-38145978b09c
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions

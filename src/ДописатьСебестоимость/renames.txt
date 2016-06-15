@@ -1,0 +1,7 @@
+﻿3352ab31-f965-4959-99c7-5d833e3de52e-->und\3352ab31-f965-4959-99c7-5d833e3de52e
+3352ab31-f965-4959-99c7-5d833e3de52e.0-->Form\Форма
+a68f34aa-f942-4803-815e-4183187f7747-->und\a68f34aa-f942-4803-815e-4183187f7747
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions

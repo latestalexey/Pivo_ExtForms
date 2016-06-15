@@ -1,0 +1,9 @@
+﻿1689fe23-dcdc-438c-b436-ccef4eca6fd2-->und\1689fe23-dcdc-438c-b436-ccef4eca6fd2
+1689fe23-dcdc-438c-b436-ccef4eca6fd2.0-->Form\Форма
+352e0c99-28e5-4552-a6a2-8c6c697673f4-->und\352e0c99-28e5-4552-a6a2-8c6c697673f4
+87547920-1bad-4c26-a399-22a7cb02a0f9.0\info-->und\87547920-1bad-4c26-a399-22a7cb02a0f9.0\info
+87547920-1bad-4c26-a399-22a7cb02a0f9.0\text-->ObjectModule.bsl
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions

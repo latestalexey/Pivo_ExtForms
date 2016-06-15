@@ -1,0 +1,16 @@
+﻿39be1df3-dae9-4e9b-828d-401762d36608-->und\39be1df3-dae9-4e9b-828d-401762d36608
+49015d3a-63af-4e06-96bc-e58e4e0b5043-->und\49015d3a-63af-4e06-96bc-e58e4e0b5043
+49015d3a-63af-4e06-96bc-e58e4e0b5043.0-->und\49015d3a-63af-4e06-96bc-e58e4e0b5043.0
+5d903cf7-0c60-4b07-b832-4648279acf09-->und\5d903cf7-0c60-4b07-b832-4648279acf09
+5d903cf7-0c60-4b07-b832-4648279acf09.0-->Form\ФормаВыбора
+5d903cf7-0c60-4b07-b832-4648279acf09.1-->und\5d903cf7-0c60-4b07-b832-4648279acf09.1
+a8e5cb3a-b0f3-41ca-a9cb-1ca2f4a7483f.0\info-->und\a8e5cb3a-b0f3-41ca-a9cb-1ca2f4a7483f.0\info
+a8e5cb3a-b0f3-41ca-a9cb-1ca2f4a7483f.0\text-->ObjectModule.bsl
+a8e5cb3a-b0f3-41ca-a9cb-1ca2f4a7483f.1-->und\a8e5cb3a-b0f3-41ca-a9cb-1ca2f4a7483f.1
+copyinfo-->und\copyinfo
+e9c75664-00fe-4f6f-9128-65072b5318b1-->und\e9c75664-00fe-4f6f-9128-65072b5318b1
+e9c75664-00fe-4f6f-9128-65072b5318b1.0-->Form\Форма
+e9c75664-00fe-4f6f-9128-65072b5318b1.1-->und\e9c75664-00fe-4f6f-9128-65072b5318b1.1
+root-->und\root
+version-->und\version
+versions-->und\versions
