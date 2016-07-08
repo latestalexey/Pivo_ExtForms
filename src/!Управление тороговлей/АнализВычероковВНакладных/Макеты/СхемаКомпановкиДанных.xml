@@ -150,6 +150,23 @@
 					</NumberQualifiers>
 				</valueType>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Комментарий</dataPath>
+				<field>Комментарий</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Комментарий</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>100</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<objectName>ТаблицаРезультат</objectName>
 		</dataSet>
@@ -168,6 +185,10 @@
 		<totalField>
 			<dataPath>НомерВерсии</dataPath>
 			<expression>Максимум(НомерВерсии)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Комментарий</dataPath>
+			<expression>Максимум(Комментарий)</expression>
 		</totalField>
 		<settingsVariant>
 			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
@@ -238,8 +259,14 @@
 						</item>
 						<placement>Vertically</placement>
 					</item>
-					<item xsi:type="SelectedItemField">
-						<field>ЧислоОтличий</field>
+					<item xsi:type="SelectedItemFolder">
+						<item xsi:type="SelectedItemField">
+							<field>ЧислоОтличий</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>Комментарий</field>
+						</item>
+						<placement>Vertically</placement>
 					</item>
 					<placement>Horizontally</placement>
 				</item>
