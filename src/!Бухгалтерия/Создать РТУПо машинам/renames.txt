@@ -1,0 +1,9 @@
+﻿08209e1d-4c07-4925-a331-7b6bf162ee16-->und\08209e1d-4c07-4925-a331-7b6bf162ee16
+08209e1d-4c07-4925-a331-7b6bf162ee16.0-->Form\СписокМашин
+4cb1f137-436e-4748-b10d-c07fefae93fa-->und\4cb1f137-436e-4748-b10d-c07fefae93fa
+b0f91bdc-7bfd-4e33-bf2d-4abe88cd680f-->und\b0f91bdc-7bfd-4e33-bf2d-4abe88cd680f
+b0f91bdc-7bfd-4e33-bf2d-4abe88cd680f.0-->Form\Форма
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions

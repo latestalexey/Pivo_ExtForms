@@ -1,0 +1,14 @@
+﻿1ff94ca4-9af7-4bbd-b2ce-afc1c1732d54.0\info-->und\1ff94ca4-9af7-4bbd-b2ce-afc1c1732d54.0\info
+1ff94ca4-9af7-4bbd-b2ce-afc1c1732d54.0\text-->ObjectModule.bsl
+1ff94ca4-9af7-4bbd-b2ce-afc1c1732d54.1-->und\1ff94ca4-9af7-4bbd-b2ce-afc1c1732d54.1
+6fde8f7e-3b98-40b2-a3fd-c2a0b7507d60-->und\6fde8f7e-3b98-40b2-a3fd-c2a0b7507d60
+713f2670-5939-407e-a582-d69ce495b7a7-->und\713f2670-5939-407e-a582-d69ce495b7a7
+713f2670-5939-407e-a582-d69ce495b7a7.0-->Form\ФормаИзмененияЗначений
+a179de51-40d9-47b1-893f-6abc3b93e7df-->und\a179de51-40d9-47b1-893f-6abc3b93e7df
+a179de51-40d9-47b1-893f-6abc3b93e7df.0-->Form\ФормаВыбораОбъектов
+c485bb63-9123-4cd6-b4f8-f9abba1db4be-->und\c485bb63-9123-4cd6-b4f8-f9abba1db4be
+c485bb63-9123-4cd6-b4f8-f9abba1db4be.0-->Form\ОсновнаяФорма
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
