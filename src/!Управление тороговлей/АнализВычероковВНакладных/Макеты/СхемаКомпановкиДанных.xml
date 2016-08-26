@@ -167,6 +167,19 @@
 					</StringQualifiers>
 				</valueType>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПричинаРедактированияДокумента</dataPath>
+				<field>ПричинаРедактированияДокумента</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Причина редактирования документа</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ПричиныИсправленияДокумента</Type>
+				</valueType>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<objectName>ТаблицаРезультат</objectName>
 		</dataSet>
@@ -189,6 +202,10 @@
 		<totalField>
 			<dataPath>Комментарий</dataPath>
 			<expression>Максимум(Комментарий)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ПричинаРедактированияДокумента</dataPath>
+			<expression>Максимум(ПричинаРедактированияДокумента)</expression>
 		</totalField>
 		<settingsVariant>
 			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
@@ -265,6 +282,15 @@
 						</item>
 						<item xsi:type="SelectedItemField">
 							<field>Комментарий</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>ПричинаРедактированияДокумента</field>
+							<lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Причина</v8:content>
+								</v8:item>
+							</lwsTitle>
 						</item>
 						<placement>Vertically</placement>
 					</item>
