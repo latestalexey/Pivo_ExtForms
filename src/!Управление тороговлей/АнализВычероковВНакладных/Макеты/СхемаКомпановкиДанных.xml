@@ -6,7 +6,7 @@
 			<dataSourceType>Local</dataSourceType>
 		</dataSource>
 		<dataSet xsi:type="DataSetObject">
-			<name>НаборДанных1</name>
+			<name>ТаблицаОригиналов</name>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>Документ</dataPath>
 				<field>Документ</field>
@@ -21,26 +21,8 @@
 				</valueType>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>НомерВерсииОригинал</dataPath>
-				<field>НомерВерсииОригинал</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Номер версии оригинал</d5p1:content>
-					</d5p1:item>
-				</title>
-				<valueType>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
-					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Digits>10</Digits>
-						<FractionDigits>0</FractionDigits>
-						<AllowedSign>Any</AllowedSign>
-					</NumberQualifiers>
-				</valueType>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>ДатаВерсииОригинал</dataPath>
-				<field>ДатаВерсииОригинал</field>
+				<field>ДатаВерсии</field>
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
@@ -56,7 +38,7 @@
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>АвторВерсииОригинал</dataPath>
-				<field>АвторВерсииОригинал</field>
+				<field>АвторВерсии</field>
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
@@ -68,21 +50,116 @@
 				</valueType>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>НомерВерсии</dataPath>
+				<dataPath>НомерВерсииОригинал</dataPath>
 				<field>НомерВерсии</field>
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Номер версии</d5p1:content>
+						<d5p1:content>Номер версии оригинал</d5p1:content>
 					</d5p1:item>
 				</title>
 				<valueType>
 					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
 					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Digits>10</Digits>
+						<Digits>0</Digits>
 						<FractionDigits>0</FractionDigits>
 						<AllowedSign>Any</AllowedSign>
 					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Комментарий</dataPath>
+				<field>Комментарий</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Комментарий</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>100</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПричинаРедактированияДокумента</dataPath>
+				<field>ПричинаРедактированияДокумента</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Причина редактирования документа</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ПричиныИсправленияДокумента</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НоменклатураОригинал</dataPath>
+				<field>Номенклатура</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Номенклатура оригинал</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Номенклатура</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоОригинал</dataPath>
+				<field>Количество</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество оригинал</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>3</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧДЦ=3; ЧН=</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГруппировкаВерсий</dataPath>
+				<field>ГруппировкаВерсий</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Группировка версий</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<objectName>ТаблицаОригиналов</objectName>
+		</dataSet>
+		<dataSet xsi:type="DataSetObject">
+			<name>ТаблицаВерсий</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Документ</dataPath>
+				<field>Документ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Документ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<TypeSet xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:DocumentRef</TypeSet>
 				</valueType>
 			</field>
 			<field xsi:type="DataSetFieldField">
@@ -115,30 +192,12 @@
 				</valueType>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>ЧислоОтличий</dataPath>
-				<field>ЧислоОтличий</field>
+				<dataPath>НомерВерсии</dataPath>
+				<field>НомерВерсии</field>
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Число отличий</d5p1:content>
-					</d5p1:item>
-				</title>
-				<valueType>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
-					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Digits>10</Digits>
-						<FractionDigits>0</FractionDigits>
-						<AllowedSign>Any</AllowedSign>
-					</NumberQualifiers>
-				</valueType>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>ГруппировкаВерсий</dataPath>
-				<field>ГруппировкаВерсий</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Группировка версий</d5p1:content>
+						<d5p1:content>Номер версии</d5p1:content>
 					</d5p1:item>
 				</title>
 				<valueType>
@@ -167,28 +226,148 @@
 					</StringQualifiers>
 				</valueType>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПричинаРедактированияДокумента</dataPath>
+				<field>ПричинаРедактированияДокумента</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Причина редактирования документа</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ПричиныИсправленияДокумента</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Номенклатура</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Номенклатура</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Количество</dataPath>
+				<field>Количество</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>3</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГруппировкаВерсий</dataPath>
+				<field>ГруппировкаВерсий</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Группировка версий</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
-			<objectName>ТаблицаРезультат</objectName>
+			<objectName>ТаблицаВерсий</objectName>
 		</dataSet>
+		<dataSetLink>
+			<sourceDataSet>ТаблицаВерсий</sourceDataSet>
+			<destinationDataSet>ТаблицаОригиналов</destinationDataSet>
+			<sourceExpression>Документ</sourceExpression>
+			<destinationExpression>Документ</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>ТаблицаВерсий</sourceDataSet>
+			<destinationDataSet>ТаблицаОригиналов</destinationDataSet>
+			<sourceExpression>Номенклатура</sourceExpression>
+			<destinationExpression>НоменклатураОригинал</destinationExpression>
+		</dataSetLink>
+		<calculatedField>
+			<dataPath>Дельта</dataPath>
+			<expression>ЕстьNull(Количество,0)-КоличествоОригинал</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Дельта</d4p1:content>
+				</d4p1:item>
+			</title>
+		</calculatedField>
+		<totalField>
+			<dataPath>Дельта</dataPath>
+			<expression>Сумма(Дельта)</expression>
+			<group>АвторВерсииОригинал</group>
+			<group>ДатаВерсииОригинал</group>
+			<group>КоличествоОригинал</group>
+			<group>НоменклатураОригинал</group>
+			<group>НомерВерсииОригинал</group>
+		</totalField>
 		<totalField>
 			<dataPath>АвторВерсии</dataPath>
 			<expression>Максимум(АвторВерсии)</expression>
+			<group>АвторВерсииОригинал</group>
+			<group>ДатаВерсииОригинал</group>
+			<group>НомерВерсииОригинал</group>
 		</totalField>
 		<totalField>
 			<dataPath>ДатаВерсии</dataPath>
 			<expression>Максимум(ДатаВерсии)</expression>
-		</totalField>
-		<totalField>
-			<dataPath>ЧислоОтличий</dataPath>
-			<expression>Сумма(ЧислоОтличий)</expression>
+			<group>АвторВерсииОригинал</group>
+			<group>ДатаВерсииОригинал</group>
+			<group>КоличествоОригинал</group>
+			<group>НоменклатураОригинал</group>
+			<group>НомерВерсииОригинал</group>
 		</totalField>
 		<totalField>
 			<dataPath>НомерВерсии</dataPath>
 			<expression>Максимум(НомерВерсии)</expression>
+			<group>АвторВерсииОригинал</group>
+			<group>ДатаВерсииОригинал</group>
+			<group>НомерВерсииОригинал</group>
 		</totalField>
 		<totalField>
 			<dataPath>Комментарий</dataPath>
 			<expression>Максимум(Комментарий)</expression>
+			<group>АвторВерсииОригинал</group>
+			<group>ДатаВерсииОригинал</group>
+			<group>НомерВерсииОригинал</group>
+		</totalField>
+		<totalField>
+			<dataPath>ПричинаРедактированияДокумента</dataPath>
+			<expression>Максимум(ПричинаРедактированияДокумента)</expression>
+			<group>АвторВерсииОригинал</group>
+			<group>ДатаВерсииОригинал</group>
+			<group>НомерВерсииОригинал</group>
+		</totalField>
+		<totalField>
+			<dataPath>Номенклатура</dataPath>
+			<expression>Максимум(Номенклатура)</expression>
+			<group>АвторВерсииОригинал</group>
+			<group>ДатаВерсииОригинал</group>
+			<group>КоличествоОригинал</group>
+			<group>НоменклатураОригинал</group>
+			<group>НомерВерсииОригинал</group>
+		</totalField>
+		<totalField>
+			<dataPath>Количество</dataPath>
+			<expression>Максимум(Количество)</expression>
+			<group>АвторВерсииОригинал</group>
+			<group>ДатаВерсииОригинал</group>
+			<group>КоличествоОригинал</group>
+			<group>НоменклатураОригинал</group>
+			<group>НомерВерсииОригинал</group>
 		</totalField>
 		<settingsVariant>
 			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
@@ -206,9 +385,6 @@
 		</item>
 		<item xsi:type="SelectedItemField">
 			<field>НомерВерсии</field>
-		</item>
-		<item xsi:type="SelectedItemField">
-			<field>ЧислоОтличий</field>
 		</item>
 	</selection>
 	<order>
@@ -251,24 +427,57 @@
 				</item>
 				<item xsi:type="SelectedItemFolder">
 					<item xsi:type="SelectedItemFolder">
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Автор изменений</v8:content>
+							</v8:item>
+						</lwsTitle>
 						<item xsi:type="SelectedItemField">
 							<field>АвторВерсии</field>
 						</item>
 						<item xsi:type="SelectedItemField">
 							<field>ДатаВерсии</field>
 						</item>
-						<placement>Vertically</placement>
+						<placement>Horizontally</placement>
 					</item>
 					<item xsi:type="SelectedItemFolder">
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Причина</v8:content>
+							</v8:item>
+						</lwsTitle>
 						<item xsi:type="SelectedItemField">
-							<field>ЧислоОтличий</field>
+							<field>ПричинаРедактированияДокумента</field>
+							<lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Причина</v8:content>
+								</v8:item>
+							</lwsTitle>
 						</item>
 						<item xsi:type="SelectedItemField">
 							<field>Комментарий</field>
 						</item>
-						<placement>Vertically</placement>
+						<placement>Horizontally</placement>
 					</item>
-					<placement>Horizontally</placement>
+					<item xsi:type="SelectedItemFolder">
+						<lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Данные</v8:content>
+							</v8:item>
+						</lwsTitle>
+						<item xsi:type="SelectedItemField">
+							<field>Количество</field>
+						</item>
+						<item xsi:type="SelectedItemField">
+							<field>Дельта</field>
+						</item>
+						<placement>Horizontally</placement>
+					</item>
+					<placement>Vertically</placement>
 				</item>
 			</selection>
 		</column>
@@ -281,73 +490,140 @@
 					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
 					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
 				</item>
-				<item xsi:type="GroupItemField">
-					<field>АвторВерсииОригинал</field>
-					<groupType>Items</groupType>
-					<periodAdditionType>None</periodAdditionType>
-					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
-					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
-				</item>
-				<item xsi:type="GroupItemField">
-					<field>ДатаВерсииОригинал</field>
-					<groupType>Items</groupType>
-					<periodAdditionType>None</periodAdditionType>
-					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
-					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
-				</item>
-				<item xsi:type="GroupItemField">
-					<field>НомерВерсииОригинал</field>
-					<groupType>Items</groupType>
-					<periodAdditionType>None</periodAdditionType>
-					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
-					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
-				</item>
 			</groupItems>
 			<order>
 				<item xsi:type="OrderItemAuto"/>
 			</order>
 			<selection>
-				<item xsi:type="SelectedItemAuto">
-					<use>false</use>
-				</item>
-				<item xsi:type="SelectedItemFolder">
-					<item xsi:type="SelectedItemField">
-						<field>Документ</field>
-					</item>
-					<item xsi:type="SelectedItemFolder">
-						<lwsTitle>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Оригинал</v8:content>
-							</v8:item>
-						</lwsTitle>
-						<item xsi:type="SelectedItemField">
-							<field>АвторВерсииОригинал</field>
-							<lwsTitle>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Автор версии</v8:content>
-								</v8:item>
-							</lwsTitle>
-						</item>
-						<item xsi:type="SelectedItemField">
-							<field>ДатаВерсииОригинал</field>
-							<lwsTitle>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Дата версии</v8:content>
-								</v8:item>
-							</lwsTitle>
-						</item>
-						<placement>Vertically</placement>
-					</item>
-					<placement>Horizontally</placement>
-				</item>
+				<item xsi:type="SelectedItemAuto"/>
 			</selection>
+			<item>
+				<groupItems>
+					<item xsi:type="GroupItemField">
+						<field>НоменклатураОригинал</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+					<item xsi:type="GroupItemField">
+						<field>КоличествоОригинал</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+				</groupItems>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemAuto"/>
+				</selection>
+				<item>
+					<groupItems>
+						<item xsi:type="GroupItemField">
+							<field>АвторВерсииОригинал</field>
+							<groupType>Items</groupType>
+							<periodAdditionType>None</periodAdditionType>
+							<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+							<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+						</item>
+						<item xsi:type="GroupItemField">
+							<field>ДатаВерсииОригинал</field>
+							<groupType>Items</groupType>
+							<periodAdditionType>None</periodAdditionType>
+							<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+							<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+						</item>
+						<item xsi:type="GroupItemField">
+							<field>НомерВерсииОригинал</field>
+							<groupType>Items</groupType>
+							<periodAdditionType>None</periodAdditionType>
+							<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+							<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+						</item>
+						<item xsi:type="GroupItemField">
+							<field>НоменклатураОригинал</field>
+							<groupType>Items</groupType>
+							<periodAdditionType>None</periodAdditionType>
+							<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+							<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+						</item>
+						<item xsi:type="GroupItemField">
+							<field>КоличествоОригинал</field>
+							<groupType>Items</groupType>
+							<periodAdditionType>None</periodAdditionType>
+							<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+							<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+						</item>
+						<item xsi:type="GroupItemField">
+							<field>Документ</field>
+							<groupType>Items</groupType>
+							<periodAdditionType>None</periodAdditionType>
+							<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+							<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+						</item>
+					</groupItems>
+					<order>
+						<item xsi:type="OrderItemAuto"/>
+					</order>
+					<selection>
+						<item xsi:type="SelectedItemAuto">
+							<use>false</use>
+						</item>
+						<item xsi:type="SelectedItemFolder">
+							<item xsi:type="SelectedItemFolder">
+								<lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Оригинал</v8:content>
+									</v8:item>
+								</lwsTitle>
+								<item xsi:type="SelectedItemField">
+									<field>АвторВерсииОригинал</field>
+									<lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Автор версии</v8:content>
+										</v8:item>
+									</lwsTitle>
+								</item>
+								<item xsi:type="SelectedItemField">
+									<field>ДатаВерсииОригинал</field>
+									<lwsTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата версии</v8:content>
+										</v8:item>
+									</lwsTitle>
+								</item>
+								<placement>Horizontally</placement>
+							</item>
+							<item xsi:type="SelectedItemField">
+								<field>НоменклатураОригинал</field>
+								<lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Номенклатура</v8:content>
+									</v8:item>
+								</lwsTitle>
+							</item>
+							<item xsi:type="SelectedItemField">
+								<field>КоличествоОригинал</field>
+								<lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Количество</v8:content>
+									</v8:item>
+								</lwsTitle>
+							</item>
+							<placement>Vertically</placement>
+						</item>
+					</selection>
+				</item>
+			</item>
 		</row>
-		<selection>
-			<item xsi:type="SelectedItemAuto"/>
-		</selection>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -358,15 +634,21 @@
 				<dcsat:item xsi:type="dcsat:TableRow">
 					<dcsat:tableCell>
 						<dcsat:item xsi:type="dcsat:Field">
-							<dcsat:value xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xsi:type="dcscor:Parameter">ЧислоОтличий</dcsat:value>
+							<dcsat:value xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xsi:type="dcscor:Parameter">Дельта</dcsat:value>
+							<dcsat:appearance>
+								<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core">
+									<parameter>Формат</parameter>
+									<value xsi:type="xs:string">ЧЦ=15; ЧДЦ=3; ЧН=</value>
+								</item>
+							</dcsat:appearance>
 						</dcsat:item>
 						<dcsat:appIndex>0</dcsat:appIndex>
 					</dcsat:tableCell>
 				</dcsat:item>
 			</template>
 			<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
-				<dcsat:name>ЧислоОтличий</dcsat:name>
-				<dcsat:expression>ЧислоОтличий</dcsat:expression>
+				<dcsat:name>Дельта</dcsat:name>
+				<dcsat:expression>Дельта</dcsat:expression>
 			</parameter>
 			<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:DetailsAreaTemplateParameter">
 				<dcsat:name>НомерВерсии</dcsat:name>
@@ -374,14 +656,19 @@
 					<dcsat:field>НомерВерсии</dcsat:field>
 					<dcsat:expression>НомерВерсии</dcsat:expression>
 				</dcsat:fieldExpression>
+				<dcsat:mainAction>DrillDown</dcsat:mainAction>
 			</parameter>
 		</template>
 		<fieldTemplate>
-			<field>ЧислоОтличий</field>
+			<field>Дельта</field>
 			<template>Макет1</template>
 		</fieldTemplate>
 	</dataCompositionSchema>
 	<appearance xmlns="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="TableCellAppearance">
+		<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core">
+			<parameter>Шрифт</parameter>
+			<value xmlns:d4p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d4p1:Font" faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute"/>
+		</item>
 		<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core">
 			<parameter>Расшифровка</parameter>
 			<value xsi:type="Parameter">НомерВерсии</value>
