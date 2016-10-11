@@ -1,0 +1,7 @@
+﻿33295475-6126-442f-9055-a9142a985133.0\info-->und\33295475-6126-442f-9055-a9142a985133.0\info
+33295475-6126-442f-9055-a9142a985133.0\text-->ObjectModule.bsl
+9f8c8940-ffa9-47c9-8f23-f46644106ff2-->und\9f8c8940-ffa9-47c9-8f23-f46644106ff2
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
