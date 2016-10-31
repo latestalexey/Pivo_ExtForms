@@ -1,0 +1,7 @@
+﻿00098afe-2bd5-463e-aa0a-937f30d4d911-->und\00098afe-2bd5-463e-aa0a-937f30d4d911
+00098afe-2bd5-463e-aa0a-937f30d4d911.0-->Form\Форма
+64dbb7b3-f66c-42a7-85a7-955842a23e8c-->und\64dbb7b3-f66c-42a7-85a7-955842a23e8c
+copyinfo-->und\copyinfo
+root-->und\root
+version-->und\version
+versions-->und\versions
